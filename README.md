@@ -1,4 +1,9 @@
 # Checkstyle Suppression Generator
+[![Gem Version](https://badge.fury.io/rb/checkstyle-suppression-generator.svg)](https://badge.fury.io/rb/checkstyle-suppression-generator)
+![CI Status](https://github.com/matthewstyler/ruby-perlin-2D-map-generator/actions/workflows/main.yml/badge.svg)
+![CodeQL](https://github.com/matthewstyler/checkstyle-suppression-generator/workflows/CodeQL/badge.svg)
+<a href="https://codeclimate.com/github/matthewstyler/checkstyle-suppression-generator/test_coverage"><img src="https://api.codeclimate.com/v1/badges/b63e2b943acbfd970fae/test_coverage" /></a>
+<a href="https://codeclimate.com/github/matthewstyler/checkstyle-suppression-generator/maintainability"><img src="https://api.codeclimate.com/v1/badges/b63e2b943acbfd970fae/maintainability" /></a>
 
 A gem that takes as input the output of a maven checkstyle plugin checkstyle:check goal and generates a suppressions.xml file.
 
