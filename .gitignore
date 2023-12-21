@@ -15,3 +15,4 @@ Gemfile.lock
 .irb_history
 errors.txt
 suppressions.xml
+*.gem
