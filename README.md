@@ -1,0 +1,2 @@
+# Checkstyle Suppression Generator
+

@@ -1,0 +1,15 @@
+# Configuration parameters: CountComments, CountAsOne.
+Metrics/ClassLength:
+  Exclude:
+    - 'test/**/*'
+# Configuration parameters: AllowedConstants.
+Style/Documentation:
+  Exclude:
+    - 'spec/**/*'
+    - 'test/**/*'
+Metrics/MethodLength:
+  Exclude:
+    - 'test/**/*'
+Metrics/AbcSize:
+  Exclude:
+    - 'test/**/*'
