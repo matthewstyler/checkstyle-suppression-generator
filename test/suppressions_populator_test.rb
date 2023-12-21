@@ -20,9 +20,9 @@ class SuppressionsPopulatorTest < Minitest::Test
 
       <suppressions>
 
-      \t<suppress checks="Offense1" files="file1.java"/>
-      \t<suppress checks="Offense2" files="file2.java"/>
-      \t<suppress checks="Offense3" files="file3.java"/>
+        <suppress checks="Offense1" files="file1.java"/>
+        <suppress checks="Offense2" files="file2.java"/>
+        <suppress checks="Offense3" files="file3.java"/>
 
       </suppressions>
     EXPECTED_RESULT

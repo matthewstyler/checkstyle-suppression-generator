@@ -21,10 +21,10 @@ class SuppressionGeneratorTest < Minitest::Test
 
     expected_result =
       "<?xml version=\"1.0\"?>\n<!DOCTYPE suppressions PUBLIC \"-//Checkstyle//DTD SuppressionFilter" \
-      " Configuration 1.2//EN\"\n      \"https://checkstyle.org/dtds/suppressions_1_2.dtd\">\n\n<suppressions>\n\n\t" \
-      "<suppress checks=\"OverloadMethodsDeclarationOrder\" files=\"src/main/java/com/test/DEF.java\"/>\n\t<suppress" \
-      " checks=\"ParameterNumber\" files=\"src/main/java/com/test/ABC.java\"/>\n\t<suppress checks=\"ReturnCount\" " \
-      "files=\"src/main/java/com/test/ABC.java\"/>\n\t<suppress checks=\"NPathComplexity\" files=\"src/main/java/com" \
+      " Configuration 1.2//EN\"\n      \"https://checkstyle.org/dtds/suppressions_1_2.dtd\">\n\n<suppressions>\n\n  " \
+      "<suppress checks=\"OverloadMethodsDeclarationOrder\" files=\"src/main/java/com/test/DEF.java\"/>\n  <suppress" \
+      " checks=\"ParameterNumber\" files=\"src/main/java/com/test/ABC.java\"/>\n  <suppress checks=\"ReturnCount\" " \
+      "files=\"src/main/java/com/test/ABC.java\"/>\n  <suppress checks=\"NPathComplexity\" files=\"src/main/java/com" \
       "/test/ABC.java\"/>\n\n</suppressions>\n"
     File.expects(:write).with(@suppressions_file_name, expected_result)
 

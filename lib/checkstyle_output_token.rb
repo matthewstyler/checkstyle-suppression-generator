@@ -11,6 +11,6 @@ class CheckstyleOutputToken
   end
 
   def to_suppression
-    "\t<suppress checks=\"#{offense}\" files=\"#{file_name}\"/>"
+    "  <suppress checks=\"#{offense}\" files=\"#{file_name}\"/>"
   end
 end
