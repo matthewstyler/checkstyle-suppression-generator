@@ -7,6 +7,22 @@
 
 A gem that takes as input the output of a maven checkstyle plugin checkstyle:check goal and generates a suppressions.xml file.
 
+# Installation
+
+### Bundler
+
+```ruby
+gem 'ruby-perlin-2D-map-generator'
+```
+
+### Manual
+
+```sh
+gem install ruby-perlin-2D-map-generator
+```
+
+## Usage
+
 Example Input:
 ```sh
 [INFO] Scanning for projects...
