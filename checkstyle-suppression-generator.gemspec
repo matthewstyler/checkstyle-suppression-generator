@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name          = 'checkstyle-suppression-generator'
-  s.version       = '0.0.1'
+  s.version       = '0.0.2'
   s.summary       = 'Generate a Java checkstyle suppressions.xml file from a checkstyle:check output.'
   s.description   = 'A gem that takes as input the output of a maven checkstyle plugin checkstyle:check goal and
                     generates a suppressions.xml file'
