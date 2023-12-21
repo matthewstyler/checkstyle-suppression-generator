@@ -13,8 +13,8 @@ module CLI
       desc 'Generate a Java checkstyle suppressions.xml file from a checkstyle:check output.'
     end
 
-    argument :checkstyle_output do
-      name 'checkstyle_output(String)'
+    argument :checkstyle_output_file do
+      name 'checkstyle_output_file(String)'
       arity one
       desc 'Output from checkstyle:check goal'
     end
@@ -44,9 +44,7 @@ module CLI
     private
 
     def execute_command
-      puts params[:checkstyle_output]
-      puts params[:o]
-      SuppressionGenerator.new(params[:checkstyle_output], params[:o]).generate
+      SuppressionGenerator.new(params[:checkstyle_output_file], params[:o]).generate
     end
   end
 end
