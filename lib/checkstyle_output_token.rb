@@ -4,10 +4,17 @@
 class CheckstyleOutputToken
   attr_reader :severity, :file_name, :offense
 
+  OFFENSE_CONVERSION = {
+    'noTrailingWhitespace' => 'RegexpSinglelineCheck',
+    'noConsecutiveLines' => 'RegexpMultilineCheck',
+    'commentFirstSentenceMultiline' => 'RegexpMultilineCheck',
+    'commentFirstSentenceSingleline' => 'RegexpSinglelineCheck'
+  }.freeze
+
   def initialize(token_data)
     @severity = token_data[1]
     @file_name = token_data[2]
-    @offense = token_data[3]
+    @offense = OFFENSE_CONVERSION[token_data[3]] || token_data[3]
   end
 
   def to_suppression
