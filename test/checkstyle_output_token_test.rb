@@ -10,6 +10,6 @@ class CheckstyleOutputTokenTest < Minitest::Test
     assert_equal 'WARNING', token.severity
     assert_equal 'file.java', token.file_name
     assert_equal 'WhitespaceAround', token.offense
-    assert_equal "  <suppress checks=\"WhitespaceAround\" files=\"file.java\"/>", token.to_suppression
+    assert_equal '  <suppress checks="WhitespaceAround" files="file.java"/>', token.to_suppression
   end
 end

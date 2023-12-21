@@ -6,6 +6,7 @@ class SuppressionsPopulatorTest < Minitest::Test
   def setup
     @tokens = [
       CheckstyleOutputToken.new(['', 'WARNING', 'file1.java', 'Offense1']),
+      CheckstyleOutputToken.new(['', 'WARNING', 'file1.java', 'Offense1']),
       CheckstyleOutputToken.new(['', 'ERROR', 'file2.java', 'Offense2']),
       CheckstyleOutputToken.new(['', 'WARNING', 'file3.java', 'Offense3'])
     ]

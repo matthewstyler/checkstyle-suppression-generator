@@ -19,6 +19,8 @@ class SuppressionsPopulator
   end
 
   def populate
-    "#{HEADER}\n#{@tokens.map(&:to_suppression).join("\n")}\n\n#{FOOTER}"
+    "#{HEADER}\n#{@tokens.uniq do |token|
+                    [token.file_name, token.offense]
+                  end.map(&:to_suppression).join("\n")}\n\n#{FOOTER}"
   end
 end
